@@ -25,8 +25,9 @@ export class ListtodosComponent implements OnInit {
 //list of todo's in array
 
 todos=[
-  new Todo(1,'defining constructor',true,new Date()),
-  new Todo(2,'his is it',false,new Date()),
+  new Todo(1,'Defining constructor',true,new Date()),
+  new Todo(2,'This is it',false,new Date()),
+  new Todo(2,'Another Day',false,new Date())
   // {id:1,description:'learn to fly'},
   // {id:2,description:'learn to talk'}
 ]
