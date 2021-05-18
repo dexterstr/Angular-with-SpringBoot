@@ -8,7 +8,7 @@ export class HardcodeauthenticationService {
   constructor() { }
   authenticate(username,password){
    
-    console.log('before calling'+this.isUserLoggedIn());
+    // console.log('before calling'+this.isUserLoggedIn());
 if(username==='tarun' && password==='dummy'){
   //
   
@@ -16,14 +16,13 @@ if(username==='tarun' && password==='dummy'){
   // console.log('after calling'+this.isUserLoggedIn());
   return true;
   }
-  else{
-    return false;
+   return false;
   }
-  }
+  
   isUserLoggedIn(){
     let user=sessionStorage.getItem('authenticaterUser')
-    return !(user=== null)
-  }
+    return !(user === null)
+  } 
 
   logout(){
     sessionStorage.removeItem('authenticaterUser')

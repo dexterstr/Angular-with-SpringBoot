@@ -18,7 +18,7 @@ InvalidLogin=false
   //dependency injection 
   //constrcutor argument is created with variable router for Router
   constructor( private router : Router,
-    public hardcodeauthenicationservice : HardcodeauthenticationService )
+    private hardcodeauthenicationservice : HardcodeauthenticationService )
    { }
 
   ngOnInit() {
@@ -32,6 +32,7 @@ if(this.hardcodeauthenicationservice.authenticate(this.username,this.password)){
   //welcome/tarun
   this.router.navigate(['welcome',this.username])
   this.InvalidLogin=false
+
 }
 else {
   this.InvalidLogin=true
