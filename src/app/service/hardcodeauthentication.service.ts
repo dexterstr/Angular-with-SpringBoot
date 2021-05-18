@@ -13,15 +13,22 @@ if(username==='tarun' && password==='dummy'){
   //
   
   sessionStorage.setItem('authenticaterUser',username );
-  console.log('after calling'+this.isUserLoggedIn());
+  // console.log('after calling'+this.isUserLoggedIn());
   return true;
   }
+  else{
     return false;
   }
-
+  }
   isUserLoggedIn(){
     let user=sessionStorage.getItem('authenticaterUser')
     return !(user=== null)
   }
+
+  logout(){
+    sessionStorage.removeItem('authenticaterUser')
+  }
+  
+   
 
 }
